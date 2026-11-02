@@ -5,6 +5,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 
   .top {
     padding: 20px;
@@ -57,7 +58,8 @@
   .center {
     padding: 20px;
     flex: 1;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -99,6 +101,7 @@
         p {
           padding: 20px;
           background-color: rgba(17, 25, 40, 0.3);
+          overflow-wrap: anywhere;
           border-radius: 10px;
         }
 
